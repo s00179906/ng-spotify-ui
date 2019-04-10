@@ -1,0 +1,91 @@
+.sidenav {
+  height: 100%;
+  width: 20em;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #030617;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.active{
+  transform: translate(20px, 0px);
+  color: royalblue;
+}
+
+.user-displayname{
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding: 2em 0;
+  transition: 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: translate(20px, 0px);
+  color: royalblue;
+}
+
+a {
+  text-decoration: none;
+  color: mintcream;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.notify-logo {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-spotify {
+  font-size: 5.5em;
+}
+
+.fa-music,
+.fa-wpforms,
+.fa-search,
+.fa-home {
+  font-size: 2.5em;
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-div{
+  background-color: #171b44;
+  border-radius: 25px;
+  color: mintcream;
+  padding: 10px;
+  transition: 0.1s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 12em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-div:hover{
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.2s;
+  transform: translate(0px, -10px);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4), 0 8px 24px 0 rgba(0, 0, 0, 0.6);
+}
+
+.spotify-logo {
+  margin: auto;
+  width: 50%;
+  cursor: pointer;
+  outline: none;
+}
+

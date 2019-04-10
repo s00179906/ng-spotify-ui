@@ -1,0 +1,8 @@
+<div class="search-container">
+  <input type="text" #searchTerm (keyup)="[SearchArtist(searchTerm.value), SearchForSongs(searchTerm.value)]"
+    class="search-txt" placeholder="Search tracks, albums, artist ....">
+</div>
+
+
+<app-songs [items]="artists"></app-songs>
+<!--<app-tracks [songs]="songs"></app-tracks>-->

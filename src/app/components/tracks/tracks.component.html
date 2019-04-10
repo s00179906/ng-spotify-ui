@@ -1,0 +1,5 @@
+<div *ngFor="let track of songs">
+    <iframe [src]="track.uri | dom" width="320" height="90" frameborder="0" allowtransparency="true"
+    allow="encrypted-media"></iframe>
+    <p>{{track.name}}</p>
+</div>

@@ -1,0 +1,53 @@
+<div class="super-container ">
+  <div *ngIf="!userData" class="nouserdata-container">
+    <img src="assets\img\oops.png" class="oops-text" />
+    <h1 class="login-warning">Hey there! Please login to view your library</h1>
+    <a class="login-redirect" (click)="LoginWithSpotify()">Login</a>
+  </div>
+
+  <div class="user-details-container" *ngIf="userData">
+    <table>
+      <tbody>
+        <td><img [src]="userData.images[0].url" class="user-image" /></td>
+        <td>
+          <p>{{ userData.display_name }}</p>
+        </td>
+        <td>
+          <p>{{ userData.birthdate }}</p>
+        </td>
+        <td>
+          <p>{{ userData.country }}</p>
+        </td>
+        <td><a [href]="userData.external_urls.spotify | dom">Visit User</a></td>
+        <td><h2>Your Favourite Songs</h2></td>
+      </tbody>
+    </table>
+  </div>
+
+  <!--<div *ngIf="userData">
+    <label>Enter in your spotify user id:
+      <input type="text" #userID />
+      <input type="submit" (click)="getUserByTheirID(userID.value)" />
+    </label>
+    <div *ngFor="let playlist of otherUsersPlaylists">
+      <p>TEST: {{playlist.name}}</p>
+      <img [src]="playlist.images[0].url" />
+      <div *ngFor="let images of otherUsersPlaylists.images">
+        <img [src]="images"/>
+      </div>
+    </div>
+  </div>-->
+
+  <div class="library-tracks-container" *ngFor="let track of userTrack">
+    <iframe
+      [src]="track.track.uri | dom"
+      width="300"
+      height="300"
+      frameborder="0"
+      allowtransparency="true"
+      allow="encrypted-media"
+    >
+    </iframe>
+    
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.super-container {
+  margin-left: 20em;
+  width: 100%;
+}
+
+.table-data-image{
+  width: 150px;
+  margin: 10px;
+}
+
+.table td{
+  padding: 0px 60px;
+  width: 28em;
+  /*font-size: 1.2em;*/
+}
+
+.table-row-tracks:hover{
+  background-color: #030617;
+}
+
+tr:nth-child(odd){
+  background-color: #151e35;
+}
+
+.table-header{
+  background-color: #030617;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  padding: 10px;
+  position: fixed;
+}
+
+.table-header th:nth-child(1){
+  padding: 0 4.5em;
+}
+.table-header th:nth-child(2){
+  padding: 0 11em;
+}
+.table-header th:nth-child(3){
+  padding: 0 6em;
+}
+.table-header th:nth-child(4){
+  padding: 0 20em;
+}

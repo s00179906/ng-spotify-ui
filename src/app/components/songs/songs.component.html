@@ -1,0 +1,9 @@
+<div class="super-container" *ngIf="items">
+  <div (click)="GetArtistsByID(item)" *ngFor="let item of items" class="artists-container">
+    <img [src]="item.images[0].url">
+    <div>
+      <h6>{{ item.name }}</h6>
+      <h6 *ngFor="let artist of item.artists">{{ artist.name }}</h6>
+    </div>
+  </div>
+</div>

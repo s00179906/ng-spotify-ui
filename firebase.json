@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/Angular-Spotify-API",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

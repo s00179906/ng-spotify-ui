@@ -1,0 +1,27 @@
+<nav class="sidenav">
+  <div class="spotify-logo" routerLink="home">
+    <i class="fab fa-spotify"></i>
+  </div>
+  <h3 *ngIf="userData" class="user-displayname">{{userData.display_name}}</h3>
+  <ul>
+    <li>
+      <i class="fas fa-home" routerLink="home"></i>
+      <a routerLink="home" routerLinkActive="active">Home</a>
+    </li>
+    <li>
+      <i class="fas fa-search" routerLink="search"></i>
+      <a routerLink="search" routerLinkActive="active">Search</a>
+    </li>
+    <li>
+      <i class="fas fa-music" routerLink="user"></i>
+      <a routerLink="user" routerLinkActive="active">Library</a>
+    </li>
+    <li>
+      <i class="fab fa-wpforms" routerLink="form"></i>
+      <a routerLink="form" routerLinkActive="active">Form</a>
+    </li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </ul>
+  <div class="login-div">
+    <a routerLink="login" routerLinkActive="active" (click)="LoginWithSpotify()">Login</a>
+  </div>
+</nav>

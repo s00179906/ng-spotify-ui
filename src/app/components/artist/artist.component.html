@@ -1,0 +1,36 @@
+<div class="super-container">
+  <div>
+    <table class="table">
+      <thead class="table-header">
+        <th>Album Preview</th>
+        <th>Album Name</th>
+        <th>Track Name</th>
+        <th>Play track</th>
+      </thead>
+
+      <tbody>
+        <tr
+          *ngFor="let track of topTracks; let i = index"
+          class="table-row-tracks"
+        >
+          <td>
+            <img class="table-data-image" [src]="track.album.images[0].url" />
+          </td>
+          <td>{{ track.album.name }}</td>
+          <td>{{ track.name }}</td>
+          <td>
+            <iframe
+              [src]="track.uri | dom"
+              width="350"
+              height="100"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            >
+            </iframe>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

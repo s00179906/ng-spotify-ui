@@ -1,0 +1,22 @@
+<div class="super-container">
+  <div class="form-outline">
+    <h2 [class.successFeedback]="userFeedback">Thanks for using Notify!</h2>
+    <p id="feedback-text" [class.successSubmit]="userFeedback">Please fill out this form and leave your feedback!</p>
+  </div>
+
+  <form class="user-form">
+    <div class="input-div">
+      <input placeholder="First Name" type="text" #firstName>
+    </div>
+    <div class="input-div">
+      <input placeholder="Last Name" type="text" #lastName>
+    </div>
+    <div class="input-div">
+      <input placeholder="Email" type="text" #email>
+    </div>
+    <div class="input-div">
+        <input placeholder="Give us your feedback!" type="text" #feedback>
+      </div>
+    <input class="btn-submit" type="submit" (click)="UserFormData(firstName.value, lastName.value, email.value, feedback.value)" />
+  </form>
+</div>
