@@ -1,4 +1,4 @@
-Angular-Spotify
+Angular-Spotify  
 A College project created in angular 7 using the Spotify API
 
 How to use:
